@@ -5,17 +5,17 @@
   --theme: light;
 
   /* color */
-  --white: white;
-  --black: rgb(48, 48, 48);
+  --white: rgba(255, 255, 255, 0.705);
+  --black: rgba(0, 0, 0, 0.632);
   --gray: rgb(250, 250, 250);
-  --primary: rgb(29, 147, 171);
-  --second: rgb(231, 248, 255);
+  --primary: rgb(254, 174, 249);
+  --second: rgba(255, 231, 251, 0.473);
   --hover-color: #f3f3f3;
   --bar-color: rgba(0, 0, 0, 0.1);
-  --theme-color: var(--gray);
+  --theme-color: var(--gray); 
 
   /* shadow */
-  --shadow: 50px 50px 100px 10px rgb(0, 0, 0, 0.1);
+  --shadow: 0px 0px 10px 10px rgba(255, 186, 219, 0.18);
   --card-shadow: 0px 2px 4px 0px rgb(0, 0, 0, 0.05);
 
   /* stroke */
@@ -26,11 +26,11 @@
   --theme: dark;
 
   /* color */
-  --white: rgb(30, 30, 30);
-  --black: rgb(187, 187, 187);
+  --white: rgba(30, 30, 30, 0.566);
+  --black: rgba(255, 255, 255, 0.943);
   --gray: rgb(21, 21, 21);
-  --primary: rgb(29, 147, 171);
-  --second: rgb(27 38 42);
+  --primary: rgba(211, 66, 153, 0.651);
+  --second: rgba(204, 60, 125, 0.119);
   --hover-color: #323232;
 
   --bar-color: rgba(255, 255, 255, 0.1);
@@ -94,7 +94,9 @@ html {
 }
 
 body {
-  background-color: var(--gray);
+  background: url("https://api.lolicon.buzz/setu/v2?tag=萝莉|loli");
+  background-position: 50% 30%;
+  background-size: cover;
   color: var(--black);
   margin: 0;
   padding: 0;
@@ -360,4 +362,9 @@ pre {
 
 .copyable {
   user-select: text;
+}
+
+.markdown-body {
+  color: rgba(1,1,1,0.95) !important;
+  text-shadow:0px 0px 5px rgb(255, 255, 255, 1)
 }
